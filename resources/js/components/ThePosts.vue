@@ -10,7 +10,7 @@
                         <h3 class="mb-0">{{ post.title }}</h3>
                         <div class="mb-1 text-muted">{{ post.created_at }}</div>
                         <p class="card-text mb-auto">{{ post.content }}</p>
-                        <a href="#" class="stretched-link">Continue reading</a>
+                        <router-link :to="{ name: 'posts.show', params: { slug: post.slug } }" class="btn btn-primary">Leggi articolo</router-link>
                     </div>
                     <div class="col-auto d-none d-lg-block">
                         <img :src="getUrl(post.imgUrl)" alt="" class="img-thumbnail">

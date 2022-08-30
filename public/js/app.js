@@ -5358,12 +5358,17 @@ var render = function render() {
       staticClass: "mb-1 text-muted"
     }, [_vm._v(_vm._s(post.created_at))]), _vm._v(" "), _c("p", {
       staticClass: "card-text mb-auto"
-    }, [_vm._v(_vm._s(post.content))]), _vm._v(" "), _c("a", {
-      staticClass: "stretched-link",
+    }, [_vm._v(_vm._s(post.content))]), _vm._v(" "), _c("router-link", {
+      staticClass: "btn btn-primary",
       attrs: {
-        href: "#"
+        to: {
+          name: "posts.show",
+          params: {
+            slug: post.slug
+          }
+        }
       }
-    }, [_vm._v("Continue reading")])]), _vm._v(" "), _c("div", {
+    }, [_vm._v("Leggi articolo")])], 1), _vm._v(" "), _c("div", {
       staticClass: "col-auto d-none d-lg-block"
     }, [_c("img", {
       staticClass: "img-thumbnail",
