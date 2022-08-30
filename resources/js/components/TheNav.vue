@@ -3,7 +3,7 @@
         <header class="blog-header lh-1 py-3">
             <div class="row flex-nowrap justify-content-between align-items-center">
                 <div class="col-4 pt-1">
-                    <a class="link-secondary" href="#">Abbonamento</a>
+                    <router-link class="nav-link" :to="{ name: 'contacts' }">Contatti</router-link>
                 </div>
                 <div class="col-4 text-center">
                     <a class="blog-header-logo text-dark" href="#">Doremine Blog</a>

@@ -5225,7 +5225,7 @@ var render = function render() {
   var _vm = this,
       _c = _vm._self._c;
 
-  return _c("div", [_c("TheNav"), _vm._v(" "), _c("ThePosts")], 1);
+  return _c("div", [_c("TheNav"), _vm._v(" "), _c("router-view")], 1);
 };
 
 var staticRenderFns = [];
@@ -5255,7 +5255,16 @@ var render = function render() {
     staticClass: "blog-header lh-1 py-3"
   }, [_c("div", {
     staticClass: "row flex-nowrap justify-content-between align-items-center"
-  }, [_vm._m(0), _vm._v(" "), _vm._m(1), _vm._v(" "), _c("div", {
+  }, [_c("div", {
+    staticClass: "col-4 pt-1"
+  }, [_c("router-link", {
+    staticClass: "nav-link",
+    attrs: {
+      to: {
+        name: "contacts"
+      }
+    }
+  }, [_vm._v("Contatti")])], 1), _vm._v(" "), _vm._m(0), _vm._v(" "), _c("div", {
     staticClass: "col-4 d-flex justify-content-end align-items-center"
   }, [_c("a", {
     staticClass: "link-secondary",
@@ -5296,18 +5305,6 @@ var render = function render() {
 };
 
 var staticRenderFns = [function () {
-  var _vm = this,
-      _c = _vm._self._c;
-
-  return _c("div", {
-    staticClass: "col-4 pt-1"
-  }, [_c("a", {
-    staticClass: "link-secondary",
-    attrs: {
-      href: "#"
-    }
-  }, [_vm._v("Abbonamento")])]);
-}, function () {
   var _vm = this,
       _c = _vm._self._c;
 
@@ -40537,8 +40534,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Users/constantinandtodirascu/learntocode/boolean/esercizi/laravel-api/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /Users/constantinandtodirascu/learntocode/boolean/esercizi/laravel-api/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! /Users/constantinandtodirascu/learntocode/boolean/esercizi/laravel-boolpress/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /Users/constantinandtodirascu/learntocode/boolean/esercizi/laravel-boolpress/resources/sass/app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
