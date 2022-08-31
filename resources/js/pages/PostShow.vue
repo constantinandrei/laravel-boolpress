@@ -25,9 +25,9 @@ export default {
         }
     },
 
-    methods:{
+    methods: {
         getUrl(link){
-            return "storage/" + link
+            return "/storage/" + link
         }
     },
 

@@ -1961,7 +1961,7 @@ __webpack_require__.r(__webpack_exports__);
       });
     },
     getUrl: function getUrl(link) {
-      return "storage/" + link;
+      return "./storage/" + link;
     }
   },
   mounted: function mounted() {
@@ -2004,7 +2004,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   methods: {
     getUrl: function getUrl(link) {
-      return "storage/" + link;
+      return "/storage/" + link;
     }
   },
   mounted: function mounted() {

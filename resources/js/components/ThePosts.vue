@@ -42,7 +42,7 @@ export default {
         },
 
         getUrl(link){
-            return "storage/" + link
+            return "./storage/" + link
         }
     },
 
