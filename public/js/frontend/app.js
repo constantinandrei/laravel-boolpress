@@ -1909,13 +1909,10 @@ module.exports = {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _TheNav_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./TheNav.vue */ "./resources/js/components/TheNav.vue");
-/* harmony import */ var _ThePosts_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ThePosts.vue */ "./resources/js/components/ThePosts.vue");
-
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
-    TheNav: _TheNav_vue__WEBPACK_IMPORTED_MODULE_0__["default"],
-    ThePosts: _ThePosts_vue__WEBPACK_IMPORTED_MODULE_1__["default"]
+    TheNav: _TheNav_vue__WEBPACK_IMPORTED_MODULE_0__["default"]
   }
 });
 
@@ -1999,7 +1996,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
-      post: {}
+      post: null
     };
   },
   methods: {
@@ -2010,6 +2007,7 @@ __webpack_require__.r(__webpack_exports__);
   mounted: function mounted() {
     var _this = this;
 
+    console.log(this.$route);
     axios__WEBPACK_IMPORTED_MODULE_0___default.a.get("/api/posts/" + this.$route.params.slug).then(function (resp) {
       _this.post = resp.data;
     });

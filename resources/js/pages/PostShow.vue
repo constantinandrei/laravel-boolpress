@@ -21,7 +21,7 @@ import axios from "axios";
 export default {
     data() {
         return {
-            post: {}
+            post: null
         }
     },
 
@@ -32,6 +32,7 @@ export default {
     },
 
     mounted() {
+        console.log(this.$route)
         axios.get("/api/posts/" + this.$route.params.slug)
             .then((resp) => {
                 this.post = resp.data

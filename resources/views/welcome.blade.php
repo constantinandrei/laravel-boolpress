@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html lang="en">
     <head>
 
         <title>Doremine Blog</title>
@@ -9,10 +9,14 @@
 
         <!-- Styles -->
         <link rel="stylesheet" href="/css/app.css">
+
+        <!-- Asseti is fundamental!!!! -->
+        <script src="{{asset('js/frontend/app.js')}}" defer></script>
     </head>
     <body>
         <div id="app">
         </div>
-        <script src="js/frontend/app.js"></script>
+        
     </body>
 </html>
+
